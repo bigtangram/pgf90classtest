@@ -1,12 +1,5 @@
 cpp  -C -P -D_REAL8_ -DWRF -DLINUX -DPGI -traditional-cpp  kinds.F90  > kinds.fpp
-mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -Wl,-noinhibit-exec  -DLINUX -DPGI -c kinds.fpp
-/bin/rm -f constants.o constants.mod
-mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -Wl,-noinhibit-exec  -DLINUX -DPGI -c constants.f90
-/bin/rm -f m_rerank.o m_rerank.mod
-mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -Wl,-noinhibit-exec  -DLINUX -DPGI -c m_rerank.f90
-cpp  -C -P -D_REAL8_ -DWRF -DLINUX -DPGI -traditional-cpp  gsi_bundlemod.F90  > gsi_bundlemod.fpp
 mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -Wl,-noinhibit-exec  -DLINUX -DPGI -c gsi_bundlemod.fpp
-mpif90 kinds.o constants.o m_rerank.o gsi_bundlemod.o pgitest.f90
 
 
 
