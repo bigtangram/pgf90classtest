@@ -2,7 +2,12 @@ cpp  -C -P -D_REAL8_ -DWRF -DLINUX -DPGI -traditional-cpp  kinds.F90  > kinds.fp
 mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -DsysLinux -Wl,-noinhibit-exec  -DLINUX -DPGI -c gsi_bundlemod.fpp
 
 
+<<<<<<< HEAD
 
 
 -------------------------
 The following is used to play with git
+=======
+===============================
+This is the changes from bigHan
+>>>>>>> 3a43cb90dc886f67fb37c06564c9a980188264fa
