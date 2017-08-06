@@ -3,4 +3,4 @@ mpif90 -Mfree  -fast -Kieee -pc 64 -Ktrap=fp -byteswapio -DLANGUAGE_FORTRAN -Dsy
 
 
 ===============================
-This is the changes from bighan
+This is the changes from bigHan
